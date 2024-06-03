@@ -5,3 +5,10 @@
  const str = 'This is is a test test string';
  removeDuplicates(str); // 'This is a test string'
  */
+
+ function removeDuplicates(str){
+    const arrayFromStr = str.split(' ');
+
+    return [...new Set(arrayFromStr)].join(' ');
+
+ }
